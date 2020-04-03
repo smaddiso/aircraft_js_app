@@ -44,12 +44,18 @@
 
         <label for="engines">Engines:</label>
         <select id="engines">
-          <option disabled=>Number of Engines</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+          <optgroup label="Number of Engines">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </optgroup>
         </select>
+
+        <label for="inProduction">In Production:</label>
+        <input type="radio" id="inProduction" name="manufacturing" value="inProduction">
+        <label for="discontinued">Discontinued:</label>
+        <input type="radio" id="discontinued" name="manufacturing" value="discontinued">
       </div>
 
       <input type="submit" value="Submit Details"/>

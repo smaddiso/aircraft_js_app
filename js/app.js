@@ -11,9 +11,10 @@ const handleFormSubmit = function (submitEvent) {
   const height = submitEvent.target.height.value;
   const engineModel = submitEvent.target.engineModel.value;
   const engines = submitEvent.target.engines.value;
+  const manufacturing = submitEvent.target.manufacturing.value;
 
   const newListItem = document.createElement("li");
-  newListItem.textContent = `${manufacturer} ${model} ${family} ${seats} ${range} ${length} ${wingspan} ${height} ${engineModel} ${engines}`;
+  newListItem.textContent = `${manufacturer} ${model} ${family} ${seats} ${range} ${length} ${wingspan} ${height} ${engineModel} ${engines} ${manufacturing}`;
 
   const list = document.querySelector("#aircraftList");
   list.appendChild(newListItem);
