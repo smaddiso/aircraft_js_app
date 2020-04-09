@@ -14,7 +14,7 @@ const handleFormSubmit = function (submitEvent) {
   const manufacturing = submitEvent.target.manufacturing.value;
 
   const newListItem = document.createElement("li");
-  newListItem.textContent = `${manufacturer} ${model} ${family} ${seats} ${range} ${length} ${wingspan} ${height} ${engineModel} ${engines} ${manufacturing}`;
+  newListItem.textContent = `Manufacturer: ${manufacturer}; Model: ${model}; Family: ${family}; Seats: ${seats}; Range: ${range}; Length: ${length}; Wingspan: ${wingspan}; Height: ${height}; Engine: ${engineModel}; Engines: ${engines}; Manufacturing: ${manufacturing}`;
 
   const list = document.querySelector("#aircraftList");
   list.appendChild(newListItem);
