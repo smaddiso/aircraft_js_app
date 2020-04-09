@@ -1,0 +1,61 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 14px;
+  font-family: 'verdana'
+}
+
+#aircraft-details-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aircraft-model {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aircraft-model > label {
+  align-self: flex-start;
+}
+
+.aircraft-model > input {
+  align-self: flex-end;
+}
+
+input, select {
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.delete-button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'verdana'
+}
+
+.submit-button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'verdana'
+}
